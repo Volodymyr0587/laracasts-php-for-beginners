@@ -78,21 +78,9 @@
             ]
         ];
 
-        function filter(array|object $items, callable $fn): array
-        {
-            $filteredItems = [];
-
-            foreach ($items as $item) {
-                if ($fn($item)) {
-                    $filteredItems[] = $item;
-                }
-            }
-
-            return $filteredItems;
-        }
         
-        $filteredBooks = filter($books, function ($book) {
-            return $book['releaseYear'] < 1983;
+        $filteredBooks = array_filter($books, function ($book) {
+            return $book['author'] === 'Stephen King';
         });
 
         ?>
