@@ -25,55 +25,55 @@
                 [
                     "name" => "The Knight of the Swords", 
                     "author" => "Michael Moorcock", 
-                    "year" => 1971,
+                    "releaseYear" => 1971,
                     "purchaseUrl" => 'http://example.com',
                 ],
                 [
                     "name" => "The Queen of the Swords", 
                     "author" => "Michael Moorcock", 
-                    "year" => 1971,
+                    "releaseYear" => 1971,
                     "purchaseUrl" => 'http://example.com',
                 ],
                 [
                     "name" => "The King of the Swords", 
                     "author" => "Michael Moorcock", 
-                    "year" => 1971,
+                    "releaseYear" => 1971,
                     "purchaseUrl" => 'http://example.com',
                 ],
                 [
                     "name" => "The Time Machine", 
                     "author" => "H. G. Wells", 
-                    "year" => 1895,
+                    "releaseYear" => 1895,
                     "purchaseUrl" => 'http://example.com',
                 ],
                 [
                     "name" => "The Invisible Man", 
                     "author" => "H. G. Wells", 
-                    "year" => 1897,
+                    "releaseYear" => 1897,
                     "purchaseUrl" => 'http://example.com',
                 ],
                 [
                     "name" => "The War of the Worlds", 
                     "author" => "H. G. Wells", 
-                    "year" => 1898,
+                    "releaseYear" => 1898,
                     "purchaseUrl" => 'http://example.com',
                 ],
                 [
                     "name" => "The Shining", 
                     "author" => "Stephen King", 
-                    "year" => 1977,
+                    "releaseYear" => 1977,
                     "purchaseUrl" => 'http://example.com',
                 ],
                 [
                     "name" => "Pet Sematary", 
                     "author" => "Stephen King", 
-                    "year" => 1983,
+                    "releaseYear" => 1983,
                     "purchaseUrl" => 'http://example.com',
                 ],
                 [
                     "name" => "The Green Mile", 
                     "author" => "Stephen King", 
-                    "year" => 1996,
+                    "releaseYear" => 1996,
                     "purchaseUrl" => 'http://example.com',
                 ]
             ];
@@ -83,9 +83,8 @@
             <?php foreach ($books as $book): ?>
                 <li>
                     <a href="<?= $book['purchaseUrl']; ?>">
-                        <?= $book['name']; ?>
+                        <?= $book['name']; ?> (<?= $book['releaseYear']; ?>)
                     </a>
-                    <span><?= $book['year']; ?></span>
                 </li>
             <?php endforeach; ?>
         </ul>
