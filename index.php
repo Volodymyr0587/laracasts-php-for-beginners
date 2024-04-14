@@ -9,8 +9,8 @@ $config = require "config.php";
 $db = new Database($config['database']);
 
 $id = $_GET['id'];
-$query = "select * from posts where id = :id";
+$query = "select * from notes where id = :id";
 
-$posts = $db->query($query, [':id' => $id])->fetch();
+$notes = $db->query($query, [':id' => $id])->fetch();
 
-dd($posts);
+dd($notes);
