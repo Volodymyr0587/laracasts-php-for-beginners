@@ -1,5 +1,13 @@
 <?php 
 
+/**
+ * Dump and die function.
+ *
+ * Displays the structured information about the given variable and terminates the script execution.
+ *
+ * @param mixed $value The variable to be dumped.
+ * @return void
+ */
 function dd($value)
 {
     echo "<pre>";
