@@ -45,7 +45,7 @@ if ($user) {
     ]);
 
     // mark that the user has logged in
-    $_SEESION['user'] = [
+    $_SESSION['user'] = [
         'email' => $email
     ];
 
