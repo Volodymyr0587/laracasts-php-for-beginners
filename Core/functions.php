@@ -61,3 +61,9 @@ function old($key, $default = '')
 {
     return Core\Session::get('old')[$key] ?? $default;
 }
+
+function login($user) {
+    $_SESSION['user'] = [
+        'email' => $user['email']
+    ];
+}
